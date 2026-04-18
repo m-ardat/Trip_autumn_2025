@@ -1,0 +1,11 @@
+[theme]
+primaryColor="#4285B4"
+backgroundColor="#FFFAFA"
+#secondaryBackgroundColor="#4285B4"
+textColor="#2E2E2E"
+fontFamily="Helvetica"
+#font="sans serif"
+font="Helvetica"
+#borderColor="#000000"
+#sidebarBorder=true
+borderRadius="4px"
