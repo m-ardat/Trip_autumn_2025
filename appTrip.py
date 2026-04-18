@@ -249,9 +249,12 @@ st.set_page_config(
     initial_sidebar_state=None
 )
 
+# пути относительно файла appTrip.py, автоматически подстраивается под ОС
+BASE_DIR = Path(__file__).parent
+
 # СОСТОЯНИЯ
 if "dict_test" not in st.session_state:
-    st.session_state.dict_test = {f"{str(x)}": f"photo_days\day{str(x)}" for x in range(1, 13)}
+    st.session_state.dict_test = {str(x): BASE_DIR / "photo_days" / f"day{x}" for x in range(1, 13)}
 
 if "all_data" not in st.session_state:
     st.session_state.all_data = True
